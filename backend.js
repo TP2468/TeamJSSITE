@@ -88,7 +88,7 @@ app.get('/comments/:taskId', async (req, res) => {
     res.json(comments);
 });
 
-// Server starten
-app.listen(3000, () => {
+app.listen(3000, '0.0.0.0', () => {
     console.log('Server is running on port 3000');
 });
+
